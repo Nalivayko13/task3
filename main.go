@@ -54,7 +54,6 @@ func DeleteStudent(w http.ResponseWriter,r *http.Request){
 
 
 func GetAllStudents(w http.ResponseWriter,r *http.Request){
-	//json.NewEncoder(w).Encode(Data)
 	t,_:=template.ParseFiles("mocks/students.html")
 	t.Execute(w,Data)
 }
